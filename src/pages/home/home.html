@@ -1,10 +1,55 @@
-<!--
-  Generated template for the HomePage page.
+<!--<ion-header>
+    <ion-navbar>
+        <ion-title>
+            LearnBook
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only small (click)="logout()">
+                <ion-icon name='log-out'></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-card *ngFor="let topic of topics">
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+        <ion-item>
+            <h2>{{topic.title}}</h2>
+            <p>{{topic.para1}}</p>
+        </ion-item>
+
+        <img src="{{topic.iconUrl}}">
+
+        <ion-card-content>
+            <p>{{topic.desc}}</p>
+        </ion-card-content>
+
+        <ion-row>
+            <ion-col col-3>
+                <button ion-button (click)="startCourse(topic.title)">
+                    Start
+                </button>
+            </ion-col>
+            <ion-col col-3>
+                <button ion-button icon-left clear>
+                    <ion-icon name="alert" style="color:#ff304c;" *ngIf="topic.marksObtained<50"></ion-icon>
+                    <ion-icon name="checkmark-circle" style="color:#95e616;" *ngIf="topic.marksObtained>=50"></ion-icon>
+                    <div>{{topic.marksObtained}}%</div>
+                </button>
+            </ion-col>
+            <ion-col col-6>
+                <button ion-button icon-left clear>
+                    <ion-icon name="clock"></ion-icon>
+                    <div>{{topic.timeSpent}}</div>
+                </button>
+            </ion-col>
+        </ion-row>
+    </ion-card>
+</ion-content>
+ -->
+
+
+ <ion-header>
 
   <ion-navbar>
     <ion-title>Home</ion-title>
@@ -14,7 +59,7 @@
 
 
 <ion-content padding>
-  <h2>Welcome!</h2>
+ <h2 > <font color="white">Welcome </font> </h2>
   <button ion-button (click)="logout()">
     Log out
   </button>

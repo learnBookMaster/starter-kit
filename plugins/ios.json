@@ -1,0 +1,29 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-browsertab": {
+      "PACKAGE_NAME": "com.capgemini.iit"
+    },
+    "cordova-plugin-buildinfo": {
+      "PACKAGE_NAME": "com.capgemini.iit"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "io.ionic.firebaseui",
+      "PACKAGE_NAME": "com.capgemini.iit"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.capgemini.iit"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.capgemini.iit"
+    }
+  }
+}
